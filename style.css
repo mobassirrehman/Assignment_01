@@ -1,39 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  background-color: #edf0f9;
 }
-
 /* Hero Section */
 .hero-container {
   width: 100%;
-  height: 100vh;
-  min-height: 700px;
-  background: url(Assets/Hero-bg.png) no-repeat center center/cover;
+  height: 650px;
+  min-height: 500px;
+  background-image: url('./Assets/Hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-}
-
-.hero-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
 }
 
 /* Navbar */
@@ -45,16 +27,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 50px 150px;
   z-index: 10;
 }
 
-.logo {
+.logo-nav {
   font-family: 'Inter', sans-serif;
   font-weight: 900;
-  font-size: 34px;
+  font-size: 32px;
   color: #4E47FF;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 8px #0000004d;
   letter-spacing: -0.5px;
 }
 
@@ -62,7 +44,7 @@ body {
   background-color: #4E47FF;
   color: white;
   border: none;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid #ffffff4d;
   padding: 12px 28px;
   border-radius: 25px;
   font-family: 'Inter', sans-serif;
@@ -76,10 +58,10 @@ body {
 .sign-up-btn:hover {
   background: #0aa4a7;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px #03030333;
 }
 
-/* Banner Content */
+/* Banner Section */
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -96,7 +78,7 @@ body {
   color: #4b4949;
   max-width: 905px;
   line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px #0000004d;
   letter-spacing: -1px;
 }
 
@@ -111,37 +93,35 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(78, 71, 255, 0.4);
+  box-shadow: 0 6px 20px #4e47ff66;
 }
 
 .stay-focused-btn:hover {
   background: #0aa4a7;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(78, 71, 255, 0.6);
+  box-shadow: 0 8px 25px #4e47ff99;
 }
 
-/* Preview Section */
+/* Action Section */
 .preview-section {
   padding: 80px 0;
-  background-color: #f8f9fa;
 }
 
 .preview {
-  max-width: 1140px;
+  max-width: 1400px;
+
+  background-color: #edf0f9;
   margin: 0 auto;
-  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 0 40px;
 }
 
 .preview-text {
   flex: 1;
-  max-width: 450px;
-  margin-right: 40px;
+  max-width: 500px;
+  margin-right: 60px;
 }
 
 .preview-text h3 {
@@ -178,8 +158,8 @@ body {
 }
 
 .preview-image {
-  width: 350px;
-  height: 248px;
+  width: 400px;
+  height: 280px;
   border-radius: 20px;
   overflow: hidden;
   flex-shrink: 0;
@@ -198,9 +178,8 @@ body {
   object-fit: cover;
 }
 
-/* Growth Section */
+/* Productive User Section */
 .growth-section {
-  background-color: #f5f7ff;
   padding: 80px 0;
 }
 
@@ -217,6 +196,15 @@ body {
   font-size: 42px;
   color: #333;
   margin-bottom: 60px;
+}
+
+.growth-stats {
+  
+  border-radius: 20px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: #dce3fd;
 }
 
 .growth-grid {
@@ -338,9 +326,9 @@ body {
   color: #999;
 }
 
-/* Contact Section */
+/* Get-in Touch Section */
 .contact-section {
-  background-color: #f8f9fa;
+  background-color: #ecedf0;
   padding: 80px 0;
 }
 
@@ -413,53 +401,52 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 100%;
 }
 
 .contact-btn:hover {
   background-color: #0aa4a7;
   transform: translateY(-2px);
 }
-
-/* Footer */
+/*foorer*/
 .footer-section {
-  background-color: #2c2c2c;
-  padding: 80px 0;
-  color: white;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
 .footer-container {
-  max-width: 1140px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 40px;
   text-align: center;
 }
 
-.footer-section .logo {
-  font-family: 'Inter', sans-serif;
+.logo-footer {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 72px;
   color: #4E47FF;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
-.footer-section .description {
+.description {
   font-size: 18px;
-  color: #ccc;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 40px;
+  color: #8987A1;
+  margin: 0 auto 50px;
+  line-height: 1.7;
 }
 
 .nav-menu {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu li {
-  font-size: 16px;
-  color: #ccc;
+  font-size: 18px;
+  color: #8987A1;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -467,92 +454,3 @@ body {
 .nav-menu li:hover {
   color: #4E47FF;
 }
-
-@media (max-width: 768px) {
-  .hero-container {
-      height: 100vh;
-      padding: 0 20px;
-  }
-
-  .navbar {
-      padding: 20px;
-  }
-
-  .logo {
-      font-size: 28px;
-  }
-
-  .main-heading {
-      font-size: 42px;
-  }
-
-  .preview {
-      flex-direction: column;
-      gap: 30px;
-  }
-
-  .preview-text {
-      margin-right: 0;
-      text-align: center;
-  }
-
-  .preview-image {
-      width: 100%;
-      max-width: 350px;
-  }
-
-  .growth-grid {
-      grid-template-columns: 1fr;
-      gap: 30px;
-  }
-
-  .reviews-container {
-      grid-template-columns: 1fr;
-  }
-
-  .contact-container {
-      grid-template-columns: 1fr;
-      gap: 40px;
-  }
-
-  .contact-title {
-      font-size: 48px;
-      text-align: center;
-  }
-
-  .nav-menu {
-      flex-wrap: wrap;
-      gap: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-heading {
-      font-size: 32px;
-  }
-
-  .logo {
-      font-size: 24px;
-  }
-
-  .sign-up-btn {
-      padding: 10px 20px;
-      font-size: 14px;
-  }
-
-  .growth-title {
-      font-size: 32px;
-  }
-
-  .growth-number {
-      font-size: 48px;
-  }
-
-  .contact-title {
-      font-size: 36px;
-  }
-
-  .preview, .growth-container, .reviews-container, .contact-container, .footer-container {
-      padding: 0 20px;
-      hfkjdshfd hds
-  }
